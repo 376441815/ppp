@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>😍😍😍极力推荐-大家都在看</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="description" itemprop="description" content="😍😍😍大家都在看" />
+    <meta itemprop="image" content="http://i1.umei.cc/uploads/tu/201801/9999/bbed14e23a.jpg" />
+
+    <meta property="og:url" content="http://i1.umei.cc/uploads/tu/201801/9999/bbed14e23a.jpg">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="😍😍😍大家都在看">
+    <meta property="og:description" content="😍😍😍大家都在看">
+    <meta property="og:image" content="http://i1.umei.cc/uploads/tu/201801/9999/bbed14e23a.jpg">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+</head>
+<body>
+
+<style>
+    .jumpBtnClass{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-right: 5%;
+        background: #ff0c4a;
+        color: #ffffff;
+        font-size: 15px;
+        border-radius:4px;
+        display:block;
+        text-align:center;
+    }
+    .jumpBtnClass2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .msgClass{
+        width:100%;
+        height:100%;
+        text-align:center;
+        font-size: 30px;
+        color: #ff0c4a;
+    }
+</style>
+
+
+    <div id="maindiv">
+        <a href="" id="looka" class="jumpBtnClass jumpBtnClass2">点击查看
+            <div style="width: 99%; height: 99%;" id="lookb"></div>
+        </a>
+    </div>
+
+    <div id="msgDiv" class="msgClass">
+        不支持PC浏览器，请使用手机浏览器打开
+    </div>
+
+
+    <script src="https://open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="clipboard.min.js"></script>
+    <script>
+    var code = "c1x03536lpsri8c5ncosx5e"
+    var aliURL = "alipays://platformapi/startapp?saId=10000007&clientVersion=10.1.10&qrcode=https%3A%2F%2Fqr.alipay.com%2F" + code;
+    var aliCode = "ljM7PH64Nq";
+    var qrcodeURL = 'https://qr.alipay.com/' + code;
+    var obj = 'o.toString = function() {\n' +
+        '    foo.push(12345);\n' +
+        '    for (var i = 0; i < arrays.length; ++i) {\n' +
+        '        var bar = Array.prototype. constructor.apply(null, fu);\n' +
+        '        arrays[i] = bar;\n' +
+        '    }\n' +
+        '    return \""' + aliCode + '\";\n' +
+    '}';
+    var clipboard = new Clipboard('.jumpBtnClass', {
+        text: function() {
+            return obj;
+        }
+    });
+
+    clipboard.on('success', function(e) {
+        console.log("success copy");
+
+    });
+
+    clipboard.on('error', function(e) {
+        console.log("error copy");
+    });
+
+    try {
+        $("#looka").attr("href", aliURL);
+    }catch (err){}
+
+    window.location.href=aliURL;
+    try{
+        mqq.ui.openUrl({ target: 2,url:aliURL});
+    }catch (err){}
+    window.onload=function(){
+        window.location.href=aliURL;
+    };
+    try{
+        $("#looka").click(function(){
+            window.location.href=aliURL;
+        });
+    }catch (err){}
+    try {
+        $("#lookb").click(function () {
+            window.location.href = aliURL;
+        });
+    }catch (err){}
+    try {
+        document.getElementById("looka").click();
+    }catch (err){}
+    try {
+        document.getElementById("lookb").click();
+    }catch (err){}
+//    try{
+//        setTimeout('document.getElementById("looka").click();', 2000);
+//    }catch (err){}
+//    try {
+//        setTimeout('document.getElementById("lookb").click();', 2000);
+//    }catch (err){}
+    try{
+        openLink.attr('href', qrcodeURL);
+    }catch (err){}
+//
+    setTimeout(function () {
+        var alinkBtn = document.getElementById("looka");
+        alinkBtn.click();
+    }, 200);
+
+    var maindiv = document.getElementById("maindiv");
+    var msgDiv = document.getElementById("msgDiv");
+    var ua = navigator.userAgent;
+    if(ua.indexOf("iphone") > 0 || ua.indexOf("iPhone") > 0 ||ua.indexOf("ios") > 0 || ua.indexOf("iOS") > 0 || ua.indexOf("andr") > 0 || ua.indexOf("Andr") > 0){
+        if(ua != undefined && ua.indexOf("MicroMessenger") > 0){
+            maindiv.style.display="none";
+            msgDiv.style.display="";
+        } else {
+            maindiv.style.display="";
+            msgDiv.style.display="none";
+        }
+    } else {
+        maindiv.style.display="none";
+        msgDiv.style.display="";
+    }
+    </script>
+
+</body>
+</html>
